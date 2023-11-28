@@ -1,15 +1,17 @@
-
-import './App.css';
-import logo from './images/logo.png'
-
+import css from './App.css';
+import logo from './images/logo.png';
+import LogoIcon from './images/icons/LogoIcon.jsx';
 
 function App() {
-  
   return (
     <div>
       <header>
-        
-        <img src={logo} alt='logo' width={269} height={40}/>
+        {/* <span className={css.logoText}>ecosolution</span> */}
+        <a href="index.html">
+          <LogoIcon color={'#173D33'} className={css.logoIcon} />
+        </a>
+
+        {/* <img src={logo} alt="logo" width={269} height={40} /> */}
         <button>Get in touch</button>
       </header>
       <main>
@@ -215,7 +217,7 @@ function App() {
         </section>
       </main>
       <footer>
-        <img />
+        <img src={logo} alt="logo" width={269} height={40} />
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
         <img />
         <p>office@ecosolution.com</p>

@@ -1,0 +1,14 @@
+/* .logoIcon:hover,
+.logoIcon:focus {
+    background-color: #97D28B;
+    color: #97D28B;
+    fill: #97D28B;
+} */
+/* 
+a:hover {
+    color: green;
+} */
+
+a:hover>svg path.logoIcon {
+    fill: red;
+}
