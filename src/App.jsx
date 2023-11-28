@@ -1,18 +1,25 @@
-import css from './App.css';
-import logo from './images/logo.png';
-import LogoIcon from './images/icons/LogoIcon.jsx';
+import css from 'App.module.css';
+import LogoIcon from 'images/icons/LogoIcon';
+import BurgerIcon from 'images/icons/BurgerIcon';
+import DownIcon from 'images/icons/DownIcon';
+
+import Container from 'components/Container/Container';
 
 function App() {
   return (
-    <div>
-      <header>
-        {/* <span className={css.logoText}>ecosolution</span> */}
-        <a href="index.html">
-          <LogoIcon color={'#173D33'} className={css.logoIcon} />
+    <Container>
+      <header className={css.header}>
+        <a href="index.html" className={css.logoIcon}>
+          <LogoIcon color={'#173D33'} />
         </a>
+        <button className={css.MenuButton} type="button">
+          <BurgerIcon />
+        </button>
 
-        {/* <img src={logo} alt="logo" width={269} height={40} /> */}
-        <button>Get in touch</button>
+        <button className={css.ContactButton} type="button">
+          <span className={css.ContactButtonText}>Get in touch</span>
+          <DownIcon color={'#173D33'}/>
+        </button>
       </header>
       <main>
         <section>
@@ -217,14 +224,16 @@ function App() {
         </section>
       </main>
       <footer>
-        <img src={logo} alt="logo" width={269} height={40} />
+        <a href="index.html">
+          <LogoIcon color={'#173D33'} className={css.logoIcon} />
+        </a>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
         <img />
         <p>office@ecosolution.com</p>
         <button>UP</button>
         <p>ecosolution © 2023</p>
       </footer>
-    </div>
+    </Container>
   );
 }
 
