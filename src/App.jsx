@@ -1,36 +1,33 @@
-import css from 'App.module.css';
+import Header from 'components/Header/Header';
+
+import style from 'App.module.scss';
 import LogoIcon from 'images/icons/LogoIcon';
-import BurgerIcon from 'images/icons/BurgerIcon';
-import DownIcon from 'images/icons/DownIcon';
+import RightIcon from 'images/icons/RightIcon';
+// import BurgerIcon from 'images/icons/BurgerIcon';
+// import DownIcon from 'images/icons/DownIcon';
 
 import Container from 'components/Container/Container';
 
 function App() {
   return (
     <Container>
-      <header className={css.header}>
-        <a href="index.html" className={css.logoIcon}>
-          <LogoIcon color={'#173D33'} />
-        </a>
-        <button className={css.MenuButton} type="button">
-          <BurgerIcon />
-        </button>
-
-        <button className={css.ContactButton} type="button">
-          <span className={css.ContactButtonText}>Get in touch</span>
-          <DownIcon color={'#173D33'}/>
-        </button>
-      </header>
+      <Header />
       <main>
-        <section>
-          <h1>RENEWABLE ENERGY For any task</h1>
-          <p>
-            Development and implementation of renewable non-polluting energy
-            sources, generating power generation using energy wind, sun, water,
-            biomass
-          </p>
-          <button>Learn more</button>
+        <section className={style.mainSection}>
+          <h1 className={style.mainTitle}>RENEWABLE ENERGY For any task</h1>
+          <div className={style.mainWrapper}>
+            <p className={style.mainText}>
+              Development and implementation of renewable non-polluting energy
+              sources, generating power generation using energy wind, sun,
+              water, biomass
+            </p>
+            <button className={style.mainButton}>
+              <span className={style.mainButtonText}>Learn more</span>
+              <RightIcon color={'#97D28B'} />
+            </button>
+          </div>
         </section>
+
         <section>
           <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
           <p>office@ecosolution.com</p>
@@ -225,7 +222,7 @@ function App() {
       </main>
       <footer>
         <a href="index.html">
-          <LogoIcon color={'#173D33'} className={css.logoIcon} />
+          <LogoIcon color={'#173D33'} className={style.logoIcon} />
         </a>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
         <img />
