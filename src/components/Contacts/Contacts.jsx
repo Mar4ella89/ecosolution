@@ -6,24 +6,32 @@ const Contacts = () => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
       setWidth(window.innerWidth);
-    });
+    };
+
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', () => {});
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <div className={style.mainContactWrapper}>
-    <p className={style.mainContact}>
-      <span className={style.mainAddress}>
-        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-      </span>{' '}
-      <span className={style.mainEmail}>office@ecosolution.com</span>
-      {(width > 768) && <span className={style.mainCopy}>ecosolution © 2023</span>}
-    </p>
+      <p className={style.mainContact}>
+        <span className={style.mainAddress}>
+          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+        </span>
+        <span className={style.mainEmail}>office@ecosolution.com</span>
+        {width > 768 && (
+          <span className={style.mainCopy}>ecosolution © 2023</span>
+        )}
+      </p>
     </div>
   );
 };

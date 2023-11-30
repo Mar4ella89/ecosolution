@@ -1,0 +1,86 @@
+.about {
+    margin-top: 36px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 120px;
+    }
+}
+
+.aboutTitlte {
+    font-size: 28px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        width: 272px;
+
+        margin-right: 82px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 48px;
+        width: 365px;
+
+        margin-right: 254px;
+    }
+}
+
+.aboutText {
+    margin-top: 24px;
+    text-align: justify;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0px;
+        width: 342px;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 459px;
+        margin-left: auto;
+    }
+}
+
+.aboutTitlteWrapper {
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+    }
+}
+
+.aboutList {
+    display: grid;
+    grid-template-rows: repeat(2, 197px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+
+    margin-top: 36px;
+}
+
+.aboutItem {
+    padding: 12px;
+    background-color: #EAEDF1;
+}
+
+.aboutValueTitle {
+    line-height: 1.5;
+    margin-left: 8px;
+}
+
+.aboutValueText {
+    margin-top: 12px;
+
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: normal;
+}
+
+.aboutValueTitleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
