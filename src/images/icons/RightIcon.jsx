@@ -14,16 +14,16 @@ function RightIcon(props) {
       <path
         d="M17.6201 12.4531L21.6668 16.4998L17.6201 20.5465"
         stroke="#173D33"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10.3335 16.5H21.5535"
         stroke="#173D33"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

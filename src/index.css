@@ -24,10 +24,11 @@ body {
 
 body {
   color: #173D33;
-  background-color: #ffffff;
+  background-color: #F3F5FA;
   line-height: 1.2;
   font-family: "Fira Sans";
   font-size: 1rem;
+  letter-spacing: -0.04em;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -79,6 +80,7 @@ h6 {
   font-weight: inherit;
   font-family: "Oswald";
   line-height: 1;
+  letter-spacing:normal;
 }
 
 p {

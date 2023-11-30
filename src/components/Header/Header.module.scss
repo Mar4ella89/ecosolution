@@ -1,12 +1,61 @@
-.header {
-    display: flex;
+.headerWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: background-color 50ms ease;
+    width: 100%;
+
+    &.scrolled {
+        background-color: #FFFFFF;
+      }
+
 }
 
-.logoIcon .pathLogoName {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header {
+    display: flex;
+    margin: auto;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    min-width: 360px;
+    padding: 36px 20px;
+    
+    // transition: background-color 250ms ease;
 
-    &:hover .pathLogoName,
-    &:focus .pathLogoName {
+    // @media screen and (min-width: 360px) and (max-width: 479px) {
+    //     width: 100%;
+    //   }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 480px;
+        // padding: 36px 30px;
+      }  
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 36px 30px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        width: 1280px;
+        padding: 24px 20px;
+        
+      }
+
+    // &.scrolled {
+    //     background-color: #FFFFFF;
+    //   }
+
+}
+
+.logoIcon {
+
+    & path:nth-child(3) {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &:hover path:nth-child(3),
+    &:focus path:nth-child(3) {
         fill: #97d28b;
     }
 }
@@ -50,10 +99,10 @@
         background-color: #173D33;
         color: #97D28B;
     }
-}
 
-.contactButton svg circle {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & svg circle {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     &:hover svg circle,
     &:focus svg circle {

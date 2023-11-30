@@ -1,13 +1,12 @@
 .mainSection {
-  margin-top: 146px;
+  margin-top: 222px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    margin-top: 164px;
+    margin-top: 240px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 200px;
+    margin-top: 264px;
   }
 }
 
@@ -34,7 +33,7 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 0px;
-    margin-bottom: 43px;
+    margin-bottom: 65px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -46,7 +45,7 @@
   width: 140px;
   height: 40px;
   border-radius: 50px;
-  border: 1px solid #97D28B;
+  border: 1px solid #97d28b;
 
   display: flex;
   align-items: center;
@@ -60,8 +59,8 @@
 
   &:hover,
   &:focus {
-    background-color: #173D33;
-    color: #97D28B;
+    background-color: #173d33;
+    color: #97d28b;
   }
 
   @media screen and (min-width: 768px) {
@@ -73,9 +72,36 @@
   margin-right: 5px;
 }
 
-.mainWrapper {
-
+.mainInfoWrapper {
   @media screen and (min-width: 768px) {
     width: 364px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 7px;
+  }
 }
+
+.mainWrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  
+}
+
+// .mainContact {
+//   text-align: center;
+// }
+
+// .mainContact::before {
+//   display: block;
+//   content: '';
+//   border-top: 1px solid #97d28b;
+//   margin-top: 24px;
+//   margin-bottom: 24px;
+
+//   @media screen and (min-width: 768px) {
+//     margin-top: 26px;
+//   margin-bottom: 16px;
+//   }
+// }

@@ -1,0 +1,46 @@
+.mainContact {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.mainContactTab {
+}
+
+.mainContactDesk {
+}
+
+.mainAddress {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 77px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 492px;
+  }
+}
+
+.mainEmail {
+  display: block;
+}
+
+.mainCopy {
+  display: block;
+  margin-left: auto;
+}
+
+//   .mainContact::before {
+//     display: block;
+//     content: '';
+//     border-top: 1px solid #97d28b;
+//     margin-top: 24px;
+//     margin-bottom: 24px;
+
+//     @media screen and (min-width: 768px) {
+//       margin-top: 26px;
+//     margin-bottom: 16px;
+//     }
+//   }

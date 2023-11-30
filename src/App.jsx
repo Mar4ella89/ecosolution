@@ -5,17 +5,20 @@ import LogoIcon from 'images/icons/LogoIcon';
 import RightIcon from 'images/icons/RightIcon';
 // import BurgerIcon from 'images/icons/BurgerIcon';
 // import DownIcon from 'images/icons/DownIcon';
+import Contacts from 'components/Contacts/Contacts';
 
 import Container from 'components/Container/Container';
 
 function App() {
   return (
+    <>
+    <Header />
     <Container>
-      <Header />
       <main>
         <section className={style.mainSection}>
+        <div className={style.mainWrapper}>
           <h1 className={style.mainTitle}>RENEWABLE ENERGY For any task</h1>
-          <div className={style.mainWrapper}>
+          <div className={style.mainInfoWrapper}>
             <p className={style.mainText}>
               Development and implementation of renewable non-polluting energy
               sources, generating power generation using energy wind, sun,
@@ -26,11 +29,16 @@ function App() {
               <RightIcon color={'#97D28B'} />
             </button>
           </div>
+          </div>
+          <Contacts/>
+          {/* <p className={style.mainContact}>
+            <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span> <span>office@ecosolution.com</span>
+            </p> */}
         </section>
 
         <section>
-          <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
-          <p>office@ecosolution.com</p>
+          
+          {/* <p>office@ecosolution.com</p> */}
           <img />
         </section>
         <section>
@@ -231,6 +239,7 @@ function App() {
         <p>ecosolution © 2023</p>
       </footer>
     </Container>
+    </>
   );
 }
 
