@@ -8,6 +8,7 @@ import RightIcon from 'images/icons/RightIcon';
 // import Contacts from 'components/Contacts/Contacts';
 import Main from 'components/Main/Main';
 import About from 'components/About/About';
+import Electricity from 'components/Electricity/Electricity';
 
 import Container from 'components/Container/Container';
 
@@ -19,52 +20,8 @@ function App() {
         <main>
           <Main />
           <About />
-          {/* <section>
-            <h2>Main values of our company</h2>
-            <p>
-              EcoSolution envisions a world where sustainable energy solutions
-              power a brighter and cleaner future for all. We aspire to be at
-              the forefront of the global shift towards renewable energy,
-              leading the way in innovative technologies that harness the power
-              of nature to meet the world's energy needs.
-            </p>
-            <div>
-              <h3>Openness</h3>
-              <p>to the world, people, new ideas and projects</p>
-            </div>
-            <div>
-              <h3>Responsibility</h3>
-              <p>
-                we are aware that the results of our work have an impact on our
-                lives and the lives of future generations
-              </p>
-            </div>
-            <div>
-              <img />
-            </div>
-            <div>
-              <h3>Innovation</h3>
-              <p>
-                we use the latest technology to implement non-standard solutions
-              </p>
-            </div>
-            <div>
-              <h3>Quality</h3>
-              <p>
-                we do not strive to be the first among others, but we want to be
-                the best in our business
-              </p>
-            </div>
-            <div>
-              <img />
-            </div>
-          </section> */}
-          <section>
-            <h2>Electricity we produced for all time</h2>
-            <div>
-              1.134.147.814 <span>kWh</span>
-            </div>
-          </section>
+          <Electricity />
+
           <section>
             <h2>Successful cases of our company</h2>
             <div>02 /05</div>
