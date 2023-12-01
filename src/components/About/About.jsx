@@ -5,6 +5,7 @@ import HorizontLine from 'components/HorizontLine/HorizontLine';
 import MaximizeCircle from 'images/icons/MaximizeCircle';
 import GlobalIcon from 'images/icons/GlobalIcon';
 import CpuIcon from 'images/icons/CpuIcon';
+import Quality from 'images/icons/Quality';
 
 import style from './About.module.scss';
 
@@ -46,7 +47,7 @@ const About = () => {
       <ul className={style.aboutList}>
         <li className={style.aboutItem}>
           <div className={style.aboutValueTitleWrapper}>
-            <MaximizeCircle />
+            <MaximizeCircle width={width > 1279 ? 24 : 16} height={width > 1279 ? 24 : 16}/>
             <h3 className={style.aboutValueTitle}>Openness</h3>
           </div>
           <HorizontLine />
@@ -56,7 +57,7 @@ const About = () => {
         </li>
         <li className={style.aboutItem}>
           <div className={style.aboutValueTitleWrapper}>
-            <GlobalIcon />
+            <GlobalIcon width={width > 1279 ? 24 : 16} height={width > 1279 ? 24 : 16}/>
             <h3 className={style.aboutValueTitle}>Responsibility</h3>
           </div>
           <HorizontLine />
@@ -67,7 +68,7 @@ const About = () => {
         </li>
         <li className={style.aboutItem}>
           <div className={style.aboutValueTitleWrapper}>
-            <CpuIcon />
+            <CpuIcon width={width > 1279 ? 24 : 16} height={width > 1279 ? 24 : 16}/>
             <h3 className={style.aboutValueTitle}>Innovation</h3>
           </div>
           <HorizontLine />
@@ -76,7 +77,12 @@ const About = () => {
           </p>
         </li>
         <li className={style.aboutItem}>
-          <h3 className={style.aboutValueTitle}>Quality</h3>
+          <div className={style.aboutValueTitleWrapper}>
+            {/* <Quality className={`${style.headerWrapper} ${isScrolled ? style.scrolled : ''}`}/> */}
+            {/* {width > 768 && <VerticalLine />} */}
+            <Quality width={width > 1279 ? 24 : 16} height={width > 1279 ? 24 : 16}/>
+            <h3 className={style.aboutValueTitle}>Quality</h3>
+          </div>
           <HorizontLine />
           <p className={style.aboutValueText}>
             we do not strive to be the first among others, but we want to be the
