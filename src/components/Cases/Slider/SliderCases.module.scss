@@ -1,0 +1,164 @@
+.caseNum {
+    font-size: 28px;
+  }
+  
+  .caseAllNum {
+    opacity: 0.25;
+  }
+  
+  .switchBtn {
+    width: 66px;
+    height: 66px;
+  
+    &:hover > svg * {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &:hover > svg *,
+    &:focus > svg * {
+      color: #97d28b;
+      stroke: #97d28b;
+    }
+  }
+  
+  .switchBtnRight {
+    margin-left: 12px;
+  }
+  
+  .switchBtnWrapper {
+    margin-left: auto;
+    height: 66px;
+  
+    @media screen and (min-width: 768px) {
+      margin-left: 123px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      margin-left: 193px;
+    }
+  }
+  
+  .caseSwitchWrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 24px;
+  
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+      margin-left: auto;
+    }
+  }
+  
+  .list {
+    margin-top: 20px;
+  
+    @media screen and (min-width: 768px) {
+      margin-top: 38px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      margin-top: 120px;
+    }
+  }
+  
+  .item {
+    max-width: 480px;
+  
+    @media screen and (min-width: 768px) {
+      max-width: 342px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      max-width: 596px;
+    }
+  }
+  
+  .subTitle {
+    margin-right: 60px;
+    font-size: 18px;
+    line-height: 1.2;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+    }
+  }
+  
+  .image {
+    width: 100%;
+  }
+  
+  .moreBtn {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+  
+    &:hover > svg * {
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &:hover > svg *,
+    &:focus > svg * {
+      fill: #173d33;
+    }
+  
+    &:hover > svg path {
+      transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &:hover > svg path,
+    &:focus > svg path {
+      stroke: #97d28b;
+      fill: #173d33;
+    }
+  }
+  
+  .infoWrapper {
+    padding: 24px 12px 12px 12px;
+    background-color: #eaedf1;
+  
+    @media screen and (min-width: 1280px) {
+      padding: 36px 48px;
+    }
+  }
+  
+  .subTitleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 34px;
+    }
+  }
+  
+  .text {
+    display: flex;
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+  
+    @media screen and (min-width: 1280px) {
+      margin-top: 24px;
+
+      font-size: 16px;
+    }
+  }
+  
+  .textDate {
+    margin-left: auto;
+  }
+  

@@ -19,7 +19,7 @@ const Main = () => {
           </p>
           <button className={style.mainButton}>
             <span className={style.mainButtonText}>Learn more</span>
-            <RightIcon color={'#97D28B'} />
+            <RightIcon fill={'#97D28B'}/>
           </button>
         </div>
       </div>

@@ -9,6 +9,7 @@ import RightIcon from 'images/icons/RightIcon';
 import Main from 'components/Main/Main';
 import About from 'components/About/About';
 import Electricity from 'components/Electricity/Electricity';
+import Cases from 'components/Cases/Cases';
 
 import Container from 'components/Container/Container';
 
@@ -21,32 +22,9 @@ function App() {
           <Main />
           <About />
           <Electricity />
+          <Cases/>
 
-          <section>
-            <h2>Successful cases of our company</h2>
-            <div>02 /05</div>
-            <button>Left</button>
-            <button>Right</button>
-            <ul>
-              <li>
-                <img />
-                <h3>
-                  Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
-                </h3>
-                <button>GO</button>
-                <p>Wind Power for auto field irrigation</p>
-                <p>July 2023</p>
-              </li>
-              <li>
-                <img />
-                <h3>Zhytomyr city Private Enterprise “Bosch”</h3>
-                <button>GO</button>
-                <p>Solar Panels for industrial use</p>
-                <p>November 2023</p>
-              </li>
-            </ul>
-          </section>
-          <section>
+         /* <section>
             <h2>Frequently Asked Questions</h2>
             <ul>
               <li>
@@ -173,7 +151,8 @@ function App() {
           <p>office@ecosolution.com</p>
           <button>UP</button>
           <p>ecosolution © 2023</p>
-        </footer>
+        </footer> */
+
       </Container>
     </>
   );

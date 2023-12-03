@@ -14,8 +14,8 @@ const Electricity = () => {
         <VerticalLine />
       </div>
 
-      <div className={style.electricityCounter}>
-        1.134.147.814 <span>kWh</span>
+      <div className={style.counterWrapper}>
+        <span className={style.counter}>1.134.147.814</span> <span className={style.unit}>kWh</span>
       </div>
     </section>
   );

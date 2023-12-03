@@ -1,5 +1,6 @@
 .headerWrapper {
     position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     transition: background-color 50ms ease;
