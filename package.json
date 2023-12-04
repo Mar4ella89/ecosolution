@@ -2,6 +2,7 @@
   "name": "ecosolution",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mar4ella89.github.io/ecosolution/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
