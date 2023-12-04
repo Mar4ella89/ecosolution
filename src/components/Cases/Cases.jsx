@@ -46,39 +46,41 @@ const Cases = () => {
     beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 440,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+        },
       },
       {
         breakpoint: 768,
         settings: {
+          variableWidth: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1
-        }
+          initialSlide: 1,
+        },
       },
       {
         breakpoint: 1286,
         settings: {
+          variableWidth: true,
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-        }
+        },
       },
       {
         breakpoint: 1680,
         settings: {
+          variableWidth: true,
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
@@ -114,40 +116,39 @@ const Cases = () => {
             </button>
           </div>
         </div>
-        </div>
+      </div>
 
-        <ul className={style.list}>
-          <Slider ref={setSliderRef} {...settings}>
-            {dataSlides.map(({id, srcImg, region, name, description, date}) => (
-              <li key={id} className={style.item}>
-                <img
-                  className={style.image}
-                  src={`${process.env.PUBLIC_URL}/casesImg/${srcImg}`}
-                  alt={description}
-                  width="320"
-                />
-                <div className={style.infoWrapper}>
-                  <div className={style.subTitleWrapper}>
-                    <div className={style.subTitle}>
-                      <p>{region}</p>
-                      <p>{name}</p>
-                    </div>
+      <ul className={style.list}>
+        <Slider ref={setSliderRef} {...settings}>
+          {dataSlides.map(({ id, srcImg, region, name, description, date }) => (
+            <li key={id} className={style.item}>
+              <img
+                className={style.image}
+                src={`${process.env.PUBLIC_URL}/casesImg/${srcImg}`}
+                alt={description}
+                width="320"
+              />
+              <div className={style.infoWrapper}>
+                <div className={style.subTitleWrapper}>
+                  <div className={style.subTitle}>
+                    <p>{region}</p>
+                    <p>{name}</p>
+                  </div>
 
-                    <button type="button" className={style.moreBtn}>
-                      <RightToptBtnIcon fill={'#97D28B'} />
-                    </button>
-                  </div>
-                  <HorizontLine />
-                  <div className={style.text}>
-                    <p>{description}</p>
-                    <p className={style.textDate}>{date}</p>
-                  </div>
+                  <button type="button" className={style.moreBtn}>
+                    <RightToptBtnIcon fill={'#97D28B'} />
+                  </button>
                 </div>
-              </li>
-            ))}
-          </Slider>
-        </ul>
-      
+                <HorizontLine />
+                <div className={style.text}>
+                  <p>{description}</p>
+                  <p className={style.textDate}>{date}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </Slider>
+      </ul>
     </section>
   );
 };
