@@ -24,7 +24,7 @@ function App() {
           <Electricity />
           <Cases/>
 
-         /* <section>
+         <section>
             <h2>Frequently Asked Questions</h2>
             <ul>
               <li>

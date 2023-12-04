@@ -100,7 +100,6 @@
 
 .item {
   max-width: 480px;
-  height: 318px;
 
   @media screen and (min-width: 768px) {
     max-width: 342px;
@@ -179,14 +178,22 @@
 }
 
 .text {
-  display: flex;
-  margin-top: 12px;
+    display: flex;
+    margin-top: 12px;
 
-  @media screen and (min-width: 1280px) {
-    margin-top: 24px;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+  
+    @media screen and (min-width: 1280px) {
+      margin-top: 24px;
+
+      font-size: 16px;
+    }
   }
-}
-
-.textDate {
+  
+  .textDate {
     margin-left: auto;
-}
+  }
