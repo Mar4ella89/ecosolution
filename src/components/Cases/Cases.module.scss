@@ -46,13 +46,13 @@
   width: 66px;
   height: 66px;
 
-  &:hover > svg * {
+  &:hover>svg * {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &:hover > svg *,
-  &:focus > svg * {
+  &:hover>svg *,
+  &:focus>svg * {
     color: #97d28b;
     stroke: #97d28b;
   }
@@ -117,6 +117,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    margin-right: 28px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -133,22 +134,22 @@
   height: 60px;
   margin-left: auto;
 
-  &:hover > svg * {
+  &:hover>svg * {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &:hover > svg *,
-  &:focus > svg * {
+  &:hover>svg *,
+  &:focus>svg * {
     fill: #173d33;
   }
 
-  &:hover > svg path {
+  &:hover>svg path {
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &:hover > svg path,
-  &:focus > svg path {
+  &:hover>svg path,
+  &:focus>svg path {
     stroke: #97d28b;
     fill: #173d33;
   }
@@ -170,6 +171,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
+    min-height: 72px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -178,22 +180,22 @@
 }
 
 .text {
-    display: flex;
-    margin-top: 12px;
+  display: flex;
+  margin-top: 12px;
 
-    font-size: 12px;
+  font-size: 12px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-      }
-  
-    @media screen and (min-width: 1280px) {
-      margin-top: 24px;
-
-      font-size: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
-  
-  .textDate {
-    margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+
+    font-size: 16px;
   }
+}
+
+.textDate {
+  margin-left: auto;
+}
