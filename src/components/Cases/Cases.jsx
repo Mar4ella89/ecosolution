@@ -58,7 +58,6 @@ const Cases = () => {
             <span className={style.caseCurrentNum}>
               {(currentSlide + 1).toString().padStart(2, '0')}
             </span>
-
             <span className={style.caseAllNum}>
               /{dataSlides.length.toString().padStart(2, '0')}
             </span>
@@ -79,6 +78,7 @@ const Cases = () => {
               <RightBtnIcon color={'#173D33'} />
             </button>
           </div>
+        </div>
         </div>
 
         <ul className={style.list}>
@@ -112,7 +112,7 @@ const Cases = () => {
             ))}
           </Slider>
         </ul>
-      </div>
+      
     </section>
   );
 };
