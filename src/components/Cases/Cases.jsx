@@ -124,7 +124,7 @@ const Cases = () => {
             <li key={id} className={style.item}>
               <img
                 className={style.image}
-                src={`${process.env.PUBLIC_URL}/casesImg/${srcImg}`}
+                src={`/casesImg/${srcImg}`}
                 alt={description}
                 width="320"
               />
