@@ -1,0 +1,5 @@
+.divLine::before {
+    display: block;
+    content: '';
+    border-top: 1px solid #97d28b;
+}
