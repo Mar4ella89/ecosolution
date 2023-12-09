@@ -69,24 +69,13 @@ const Main = () => {
           media="(max-width: 767px)"
         />
         <img
-          // src="images/jpg/mainImg/wind-turbine-clean-energy-mob.jpg"
           src={mainMob}
           alt="Generating power generation using energy wind"
           width="320"
-          // height="200"
+          height="200"
           className={style.mainImg}
         />
       </picture>
-      {/* <picture>
-        <source srcSet={`${mainImg} 1x`} />
-        <img
-          src={mainImg}
-          className={style.mainImg}
-          alt="Wind generator"
-          width="1240"
-          height="524"
-        />
-      </picture> */}
     </section>
   );
 };

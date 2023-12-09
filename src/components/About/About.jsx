@@ -174,6 +174,7 @@ const About = () => {
                   src={aboutImgTab}
                   alt="Generating power generation using energy sun"
                   width="342"
+                  height="197"
                   className={style.aboutImg}
                 />
               </picture>
