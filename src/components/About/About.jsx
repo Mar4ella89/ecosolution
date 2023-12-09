@@ -7,6 +7,26 @@ import GlobalIcon from 'images/icons/GlobalIcon';
 import CpuIcon from 'images/icons/CpuIcon';
 import Quality from 'images/icons/Quality';
 
+import aboutTab from 'images/jpg/aboutImg/wind-power-plant-tab.jpg';
+import aboutTab2x from 'images/jpg/aboutImg/wind-power-plant-tab-2x.jpg';
+import aboutTabWebp from 'images/jpg/aboutImg/wind-power-plant-tab.webp';
+import aboutTabWebp2x from 'images/jpg/aboutImg/wind-power-plant-tab-2x.webp';
+
+import aboutDesk from 'images/jpg/aboutImg/wind-power-plant-desk.jpg';
+import aboutDesk2x from 'images/jpg/aboutImg/wind-power-plant-desk-2x.jpg';
+import aboutDeskWebp from 'images/jpg/aboutImg/wind-power-plant-desk.webp';
+import aboutDeskWebp2x from 'images/jpg/aboutImg/wind-power-plant-desk-2x.webp';
+
+import aboutImgTab from 'images/jpg/aboutImg/sun-panel-tab.jpg';
+import aboutImgTab2x from 'images/jpg/aboutImg/sun-panel-tab-2x.jpg';
+import aboutImgTabWebp from 'images/jpg/aboutImg/sun-panel-tab.webp';
+import aboutImgTabWebp2x from 'images/jpg/aboutImg/sun-panel-tab-2x.webp';
+
+import aboutImgDesk from 'images/jpg/aboutImg/sun-panel-desk.jpg';
+import aboutImgDesk2x from 'images/jpg/aboutImg/sun-panel-desk-2x.jpg';
+import aboutImgDeskWebp from 'images/jpg/aboutImg/sun-panel-desk.webp';
+import aboutImgDeskWebp2x from 'images/jpg/aboutImg/sun-panel-desk-2x.webp';
+
 import style from './About.module.scss';
 
 const About = () => {
@@ -104,37 +124,25 @@ const About = () => {
             <li className={`${style.aboutItem} ${style.aboutItemImgFirst}`}>
               <picture>
                 <source
-                  srcSet="
-                    aboutImg/wind-power-plant-desk.webp 1x,
-                    aboutImg/wind-power-plant-desk-2x.webp 2x
-                  "
+                  srcSet={`${aboutDeskWebp} 1x, ${aboutDeskWebp2x} 2x`}
                   media="(min-width: 1280px)"
                   type="image/webp"
                 />
                 <source
-                  srcSet="
-                    aboutImg/wind-power-plant-desk.jpg 1x,
-                    aboutImg/wind-power-plant-desk-2x.jpg 2x
-                  "
+                  srcSet={`${aboutDesk} 1x, ${aboutDesk2x} 2x`}
                   media="(min-width: 1280px)"
                 />
                 <source
-                  srcSet="
-                    aboutImg/wind-power-plant-tab.webp 1x,
-                    aboutImg/wind-power-plant-tab-2x.webp 2x
-                  "
+                  srcSet={`${aboutTabWebp} 1x, ${aboutTabWebp2x} 2x`}
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
                 <source
-                  srcSet="
-                    aboutImg/wind-power-plant-tab.jpg 1x,
-                    aboutImg/wind-power-plant-tab-2x.jpg 2x
-                  "
+                  srcSet={`${aboutTab} 1x, ${aboutTab2x} 2x`}
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="aboutImg/wind-power-plant-tab.jpg"
+                  src={aboutTab}
                   alt="Generating power generation using energy wind"
                   width="342"
                   className={style.aboutImg}
@@ -145,37 +153,25 @@ const About = () => {
             <li className={`${style.aboutItem} ${style.aboutItemImgSecond}`}>
               <picture>
                 <source
-                  srcSet="
-                    aboutImg/sun-panel-desk.webp 1x,
-                    aboutImg/sun-panel-desk-2x.webp 2x
-                  "
+                  srcSet={`${aboutImgDeskWebp} 1x, ${aboutImgDeskWebp2x} 2x`}
                   media="(min-width: 1280px)"
                   type="image/webp"
                 />
                 <source
-                  srcSet="
-                    aboutImg/sun-panel-desk.jpg 1x,
-                    aboutImg/sun-panel-desk-2x.jpg 2x
-                  "
+                  srcSet={`${aboutImgDesk} 1x, ${aboutImgDesk2x} 2x`}
                   media="(min-width: 1280px)"
                 />
                 <source
-                  srcSet="
-                    aboutImg/sun-panel-tab.webp 1x,
-                    aboutImg/sun-panel-tab-2x.webp 2x
-                  "
+                  srcSet={`${aboutImgTabWebp} 1x, ${aboutImgTabWebp2x} 2x`}
                   media="(min-width: 768px)"
                   type="image/webp"
                 />
                 <source
-                  srcSet="
-                    aboutImg/sun-panel-tab.jpg 1x,
-                    aboutImg/sun-panel-tab-2x.jpg 2x
-                  "
+                  srcSet={`${aboutImgTab} 1x, ${aboutImgTab2x} 2x`}
                   media="(min-width: 768px)"
                 />
                 <img
-                  src="aboutImg/sun-panel-tab.jpg"
+                  src={aboutImgTab}
                   alt="Generating power generation using energy sun"
                   width="342"
                   className={style.aboutImg}
