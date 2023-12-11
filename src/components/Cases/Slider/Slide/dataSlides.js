@@ -1,7 +1,7 @@
 const dataSlides = [
   {
     id: '1',
-    srcImg: '/images/casesImg/landscape-with-windmills.jpg',
+    srcImg: 'images/jpg/casesImg/landscape-with-windmills.jpg',
     region: 'Lviv Region, Radekhiv town',
     name: 'Private Enterprise “ZAKHIDNYI BUH”',
     description: 'Wind Power for auto field irrigation',
@@ -9,7 +9,7 @@ const dataSlides = [
   },
   {
     id: '2',
-    srcImg: '/landscape-with-solar-panels.jpg',
+    srcImg: 'images/jpg/casesImg/landscape-with-solar-panels.jpg',
     region: 'Zhytomyr city',
     name: 'Private Enterprise “Bosch”',
     description: 'Solar Panels for industrial use',
@@ -17,7 +17,7 @@ const dataSlides = [
   },
   {
     id: '3',
-    srcImg: 'power-plant.jpg',
+    srcImg: 'images/jpg/casesImg/power-plant.jpg',
     region: 'Rivne city',
     name: 'Private Enterprise “Biotech”',
     description: 'Thermal modules',
@@ -25,7 +25,7 @@ const dataSlides = [
   },
   {
     id: '4',
-    srcImg: 'landscape-with-windmills-1.jpg',
+    srcImg: 'images/jpg/casesImg/landscape-with-windmills-1.jpg',
     region: 'Kherson city',
     name: 'Private Enterprise “HealthyFarm”',
     description: 'Wind power',
@@ -33,7 +33,7 @@ const dataSlides = [
   },
   {
     id: '5',
-    srcImg: 'power-plant-1.jpg',
+    srcImg: 'images/jpg/casesImg/power-plant-1.jpg',
     region: 'Zaporizhia city',
     name: 'Private Enterprise “Biotech”',
     description: 'Mini nuclear stations',

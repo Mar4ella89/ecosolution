@@ -124,7 +124,7 @@ const Cases = () => {
             <li key={id} className={style.item}>
               <img
                 className={style.image}
-                src={`/casesImg/${srcImg}`}
+                src={require(`../../${srcImg}`)}
                 alt={description}
                 width="320"
               />
