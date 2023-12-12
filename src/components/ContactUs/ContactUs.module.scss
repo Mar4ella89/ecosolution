@@ -45,15 +45,22 @@
   flex-direction: column;
   gap: 24px;
   width: 244px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 
   @media screen and (min-width: 1280px) {
     gap: 32px;
     width: 486px;
+
   }
 }
 
 .subTitle {
   margin-bottom: 8px;
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
   }
@@ -98,10 +105,9 @@
 }
 
 .iconSocial {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .socialWrapper {
-    display: flex;
+  display: flex;
 }
-

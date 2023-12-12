@@ -1,6 +1,5 @@
 .form {
   width: 320px;
-  height: 560px;
 
   padding: 36px 12px;
 
@@ -25,7 +24,7 @@
   @media screen and (min-width: 1280px) {
     width: 596px;
     height: 623px;
-    padding: 48;
+    padding: 48px;
   }
 }
 
@@ -38,6 +37,10 @@
 
 .label {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 12px;
+  }
 }
 
 .textarea {
