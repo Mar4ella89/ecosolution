@@ -1,3 +1,13 @@
+.footer {
+    margin-top: 36px;
+}
+
+.logowrapper {
+    display: flex;
+    margin-top: 24px;
+}
+
+
 .logoIcon {
 
     & path:nth-child(3) {
@@ -10,6 +20,6 @@
     }
 }
 
-.upIcon {
-    margin-right: auto;
+.upBtn {
+    margin-left: auto;
 }
