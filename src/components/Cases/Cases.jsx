@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Slider from 'react-slick';
+import Slick from 'react-slick';
 
 import VerticalLine from 'components/VerticalLine/VerticalLine';
 import HorizontLine from 'components/HorizontLine/HorizontLine';
@@ -39,10 +39,20 @@ const Cases = () => {
   const settings = {
     arrows: false,
     infinite: true,
-    lazyLoad: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    spaceBetween: 24,
+    customPaging: [
+      {
+        position: 0,
+        left: 40,
+      },
+      {
+        position: 0,
+        right: 40,
+      },
+    ],
     beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
       {
@@ -50,31 +60,63 @@ const Cases = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
+          customPaging: [
+            {
+              position: 0,
+              left: 40,
+            },
+            {
+              position: 0,
+              right: 40,
+            },
+          ],
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
-          variableWidth: true,
+          spaceBetween: 50,
+          // variableWidth: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          customPaging: [
+            {
+              position: 0,
+              left: 40,
+            },
+            {
+              position: 0,
+              right: 40,
+            },
+          ],
         },
       },
       {
         breakpoint: 1286,
         settings: {
-          variableWidth: true,
+          // variableWidth: true,
           slidesToShow: 2,
           slidesToScroll: 1,
+          // spaceBetween: 50,
           initialSlide: 2,
+          // customPaging: [
+          //   {
+          //     position: 0,
+          //     left: 40,
+          //   },
+          //   {
+          //     position: 0,
+          //     right: 40,
+          //   },
+          // ],
         },
       },
       {
         breakpoint: 1680,
         settings: {
-          variableWidth: true,
+          // variableWidth: true,
+          // spaceBetween: 50,
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
@@ -118,10 +160,10 @@ const Cases = () => {
         </div>
       </div>
 
-      <ul className={style.list}>
-        <Slider ref={setSliderRef} {...settings}>
+      <div className={style.list}>
+        <Slick ref={setSliderRef} {...settings}>
           {dataSlides.map(({ id, srcImg, region, name, description, date }) => (
-            <li key={id} className={style.item}>
+            <div key={id} className={style.item}>
               <img
                 className={style.image}
                 src={require(`../../${srcImg}`)}
@@ -145,10 +187,10 @@ const Cases = () => {
                   <p className={style.textDate}>{date}</p>
                 </div>
               </div>
-            </li>
+            </div>
           ))}
-        </Slider>
-      </ul>
+        </Slick>
+      </div>
     </section>
   );
 };
