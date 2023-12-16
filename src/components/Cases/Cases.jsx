@@ -42,17 +42,6 @@ const Cases = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    spaceBetween: 24,
-    customPaging: [
-      {
-        position: 0,
-        left: 40,
-      },
-      {
-        position: 0,
-        right: 40,
-      },
-    ],
     beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
       {
@@ -60,63 +49,27 @@ const Cases = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          customPaging: [
-            {
-              position: 0,
-              left: 40,
-            },
-            {
-              position: 0,
-              right: 40,
-            },
-          ],
         },
       },
       {
         breakpoint: 767,
         settings: {
-          spaceBetween: 50,
-          // variableWidth: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          customPaging: [
-            {
-              position: 0,
-              left: 40,
-            },
-            {
-              position: 0,
-              right: 40,
-            },
-          ],
         },
       },
       {
         breakpoint: 1286,
         settings: {
-          // variableWidth: true,
           slidesToShow: 2,
           slidesToScroll: 1,
-          // spaceBetween: 50,
           initialSlide: 2,
-          // customPaging: [
-          //   {
-          //     position: 0,
-          //     left: 40,
-          //   },
-          //   {
-          //     position: 0,
-          //     right: 40,
-          //   },
-          // ],
         },
       },
       {
         breakpoint: 1680,
         settings: {
-          // variableWidth: true,
-          // spaceBetween: 50,
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
@@ -168,7 +121,7 @@ const Cases = () => {
                 className={style.image}
                 src={require(`../../${srcImg}`)}
                 alt={description}
-                width="320"
+                // width="320"
               />
               <div className={style.infoWrapper}>
                 <div className={style.subTitleWrapper}>

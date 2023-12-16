@@ -89,6 +89,8 @@
 
 .list {
   margin-top: 20px;
+  margin-left: -12px;
+  margin-right: -12px;
 
   @media screen and (min-width: 768px) {
     margin-top: 38px;
@@ -96,11 +98,26 @@
 
   @media screen and (min-width: 1280px) {
     margin-top: 120px;
+    margin-left: -24px;
+    margin-right: -24px;
   }
 }
 
 .item {
-  // max-width: 440px;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  // @media screen and (min-width: 360px) and (max-width: 479px) {
+  //   max-width: 440px;
+  // }
+
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   max-width: 440px;
+  // }
+
+  // @media screen and (max-width: 768px) {
+  //   max-width: 440px;
+  // }
 
   @media screen and (min-width: 768px) {
     max-width: 342px;
@@ -109,6 +126,8 @@
   @media screen and (min-width: 1280px) {
     max-width: 596px;
     height: 506px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
