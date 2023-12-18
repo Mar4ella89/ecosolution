@@ -121,7 +121,7 @@ const Cases = () => {
                 className={style.image}
                 src={require(`../../${srcImg}`)}
                 alt={description}
-                // width="320"
+                width="320"
               />
               <div className={style.infoWrapper}>
                 <div className={style.subTitleWrapper}>
