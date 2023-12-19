@@ -13,7 +13,7 @@ import Form from './Form/Form';
 import style from './ContactUs.module.scss';
 
 const onSubmit = formData => {
-  console.log(formData);
+  return formData;
 };
 
 const ContactsUs = () => {
