@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import HorizontLine from 'components/HorizontLine/HorizontLine';
+import Container from 'components/Container/Container';
+
 import DownIcon from 'images/icons/DownIcon';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +13,6 @@ import faqData from './dataFAQ';
 import style from './FAQ.module.scss';
 
 const FAQ = () => {
-  
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggleQuestion = index => {
@@ -19,52 +20,54 @@ const FAQ = () => {
   };
 
   return (
-    <section className={style.faq}>
-      <h2 className={style.faqTitle}>Frequently Asked Questions</h2>
-      <div className={style.faqList}>
-        {faqData.map((item, index) => (
-          <div
-            key={index}
-            className={`${style.faqItem} ${
-              index === openIndex ? 'style.open' : ''
-            }`}
-          >
-            <HorizontLine />
-            <div className={style.faqQuestionWrapper}>
-              <FontAwesomeIcon
-                onClick={() => toggleQuestion(index)}
-                icon={index === openIndex ? faMinus : faPlus}
-                className={`${style.icon} ${
-                  index === openIndex ? '' : style.iconPlus
-                }`}
-              />
+    <Container>
+      <section className={style.faq}>
+        <h2 className={style.faqTitle}>Frequently Asked Questions</h2>
+        <div className={style.faqList}>
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className={`${style.faqItem} ${
+                index === openIndex ? 'style.open' : ''
+              }`}
+            >
+              <HorizontLine />
+              <div className={style.faqQuestionWrapper}>
+                <FontAwesomeIcon
+                  onClick={() => toggleQuestion(index)}
+                  icon={index === openIndex ? faMinus : faPlus}
+                  className={`${style.icon} ${
+                    index === openIndex ? '' : style.iconPlus
+                  }`}
+                />
 
-              <div
-                className={style.faqQuestion}
-                onClick={() => toggleQuestion(index)}
-              >
-                {item.question}
+                <div
+                  className={style.faqQuestion}
+                  onClick={() => toggleQuestion(index)}
+                >
+                  {item.question}
+                </div>
               </div>
+
+              {index === openIndex && (
+                <div className={style.faqAnswer}>
+                  <p>{item.answer}</p>
+                </div>
+              )}
             </div>
-
-            {index === openIndex && (
-              <div className={style.faqAnswer}>
-                <p>{item.answer}</p>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-      <div className={style.faqFooter}>
-        <p className={style.faqFooterText}>
-          Didn't find the answer to your question?{' '}
-        </p>
-        <button className={style.contactButton} type="button">
-          <span className={style.contactButtonText}>Contact Us</span>
-          <DownIcon color={'#173D33'} />
-        </button>
-      </div>
-    </section>
+          ))}
+        </div>
+        <div className={style.faqFooter}>
+          <p className={style.faqFooterText}>
+            Didn't find the answer to your question?{' '}
+          </p>
+          <button className={style.contactButton} type="button">
+            <span className={style.contactButtonText}>Contact Us</span>
+            <DownIcon color={'#173D33'} />
+          </button>
+        </div>
+      </section>
+    </Container>
   );
 };
 

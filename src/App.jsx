@@ -8,25 +8,21 @@ import FAQ from 'components/FAQ/FAQ';
 import ContactsUs from 'components/ContactUs/ContactUs';
 import Footer from 'components/Footer/Footer';
 
-import Container from 'components/Container/Container';
-
 function App() {
   return (
     <>
       <Header />
-      <Container>
-        <main>
-          <Main />
-          <About />
-          <Electricity />
-          <Cases />
-          <FAQ />
-          <ContactsUs />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </Container>
+      <main>
+        <Main />
+        <About />
+        <Electricity />
+        <Cases />
+        <FAQ />
+        <ContactsUs />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

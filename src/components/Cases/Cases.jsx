@@ -4,6 +4,8 @@ import Slick from 'react-slick';
 
 import VerticalLine from 'components/VerticalLine/VerticalLine';
 import HorizontLine from 'components/HorizontLine/HorizontLine';
+import Container from 'components/Container/Container';
+
 import RightBtnIcon from 'images/icons/RightBtnIcon';
 import LeftBtnIcon from 'images/icons/LeftBtnIcon';
 import RightToptBtnIcon from 'images/icons/RightToptBtnIcon';
@@ -79,73 +81,77 @@ const Cases = () => {
   };
 
   return (
-    <section className={style.caseSection}>
-      <div className={style.caseHeader}>
-        <h2 className={style.caseTitle}>Successful cases of our company</h2>
+    <Container>
+      <section className={style.caseSection}>
+        <div className={style.caseHeader}>
+          <h2 className={style.caseTitle}>Successful cases of our company</h2>
 
-        {width > 768 && <VerticalLine />}
+          {width > 768 && <VerticalLine />}
 
-        <div className={style.caseSwitchWrapper}>
-          <div className={style.caseNum}>
-            <span className={style.caseCurrentNum}>
-              {(currentSlide + 1).toString().padStart(2, '0')}
-            </span>
-            <span className={style.caseAllNum}>
-              /{dataSlides.length.toString().padStart(2, '0')}
-            </span>
-          </div>
-          <div className={style.switchBtnWrapper}>
-            <button
-              type="button"
-              className={style.switchBtn}
-              onClick={sliderRef?.slickPrev}
-            >
-              <LeftBtnIcon color={'#173D33'} />
-            </button>
-            <button
-              type="button"
-              className={`${style.switchBtn} ${style.switchBtnRight}`}
-              onClick={sliderRef?.slickNext}
-            >
-              <RightBtnIcon color={'#173D33'} />
-            </button>
+          <div className={style.caseSwitchWrapper}>
+            <div className={style.caseNum}>
+              <span className={style.caseCurrentNum}>
+                {(currentSlide + 1).toString().padStart(2, '0')}
+              </span>
+              <span className={style.caseAllNum}>
+                /{dataSlides.length.toString().padStart(2, '0')}
+              </span>
+            </div>
+            <div className={style.switchBtnWrapper}>
+              <button
+                type="button"
+                className={style.switchBtn}
+                onClick={sliderRef?.slickPrev}
+              >
+                <LeftBtnIcon color={'#173D33'} />
+              </button>
+              <button
+                type="button"
+                className={`${style.switchBtn} ${style.switchBtnRight}`}
+                onClick={sliderRef?.slickNext}
+              >
+                <RightBtnIcon color={'#173D33'} />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className={style.list}>
-        <Slick ref={setSliderRef} {...settings}>
-          {dataSlides.map(({ id, srcImg, region, name, description, date }) => (
-            <div key={id} className={style.item}>
-              <img
-                className={style.image}
-                src={require(`../../${srcImg}`)}
-                alt={description}
-                width="320"
-                // height="168"
-              />
-              <div className={style.infoWrapper}>
-                <div className={style.subTitleWrapper}>
-                  <div className={style.subTitle}>
-                    <p>{region}</p>
-                    <p>{name}</p>
+        <div className={style.list}>
+          <Slick ref={setSliderRef} {...settings}>
+            {dataSlides.map(
+              ({ id, srcImg, region, name, description, date }) => (
+                <div key={id} className={style.item}>
+                  <img
+                    className={style.image}
+                    src={require(`../../${srcImg}`)}
+                    alt={description}
+                    width="320"
+                    // height="168"
+                  />
+                  <div className={style.infoWrapper}>
+                    <div className={style.subTitleWrapper}>
+                      <div className={style.subTitle}>
+                        <p>{region}</p>
+                        <p>{name}</p>
+                      </div>
+
+                      <button type="button" className={style.moreBtn}>
+                        <RightToptBtnIcon fill={'#97D28B'} />
+                      </button>
+                    </div>
+                    <HorizontLine />
+                    <div className={style.text}>
+                      <p>{description}</p>
+                      <p className={style.textDate}>{date}</p>
+                    </div>
                   </div>
-
-                  <button type="button" className={style.moreBtn}>
-                    <RightToptBtnIcon fill={'#97D28B'} />
-                  </button>
                 </div>
-                <HorizontLine />
-                <div className={style.text}>
-                  <p>{description}</p>
-                  <p className={style.textDate}>{date}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slick>
-      </div>
-    </section>
+              )
+            )}
+          </Slick>
+        </div>
+      </section>
+    </Container>
   );
 };
 
