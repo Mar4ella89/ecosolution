@@ -1,25 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+
+import useWindowWidth from 'hooks/useWindowWidth';
 
 import style from './Contacts.module.scss';
 
 const Contacts = () => {
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const width = useWindowWidth();
 
   return (
     <div className={style.mainContactWrapper}>

@@ -10,6 +10,8 @@ import UpIcon from 'images/icons/UpIcon';
 import { ReactComponent as FbIcon } from 'images/svg/fb.svg';
 import { ReactComponent as InstIcon } from 'images/svg/inst.svg';
 
+import useWindowWidth from 'hooks/useWindowWidth';
+
 import style from './Footer.module.scss';
 
 const Footer = () => {
@@ -28,7 +30,7 @@ const Footer = () => {
         <ul className={style.socialList}>
           <li>
             <a href="https://facebook.com/" className={style.link}>
-              <FbIcon className={style.social} />
+              <FbIcon className={`${style.social} ${style.linkFB}`} />
             </a>
           </li>
           <li>

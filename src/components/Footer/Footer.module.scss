@@ -21,6 +21,25 @@
 
 .upBtn {
     margin-left: auto;
+
+    &>svg>rect {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover>svg>rect,
+    &:focus>svg>rect {
+        fill: #173d33;
+    }
+
+    & svg path,
+    & svg path {
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover>svg path,
+    &:focus>svg path {
+        stroke: #97d28b;
+    }
 }
 
 .socialList {
@@ -36,10 +55,24 @@
 
 .link {
 
-    &:hover .social path:first-child,
-    &:focus .social path:first-child {
+    & .social path,
+    & .social path {
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & .linkFB path:first-child,
+    & .linkFB path:first-child {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .social path,
+    &:focus .social path {
         stroke: #97d28b;
+    }
+
+    &:hover .linkFB path:first-child,
+    &:focus .linkFB path:first-child {
         fill: #97d28b;
-        // fill: currentColor;
+        stroke: none;
     }
 }
