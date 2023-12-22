@@ -30,7 +30,12 @@
 }
 
 .mainEmail {
+  margin-top: 8px;
   display: block;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px
+  }
 }
 
 .mainCopy {

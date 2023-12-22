@@ -15,6 +15,8 @@ import useWindowWidth from 'hooks/useWindowWidth';
 import style from './Footer.module.scss';
 
 const Footer = () => {
+  const width = useWindowWidth();
+
   return (
     <Container>
       <div className={style.footer}>
@@ -40,8 +42,8 @@ const Footer = () => {
           </li>
         </ul>
 
-        <Contacts />
-        <p>ecosolution © 2023</p>
+        <Contacts className={style} />
+        {width < 768 && <p className={style.сopy}>ecosolution © 2023</p>}
       </div>
     </Container>
   );
