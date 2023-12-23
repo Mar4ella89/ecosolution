@@ -1,22 +1,21 @@
 import React from 'react';
 
+import useWindowWidth from 'hooks/useWindowWidth';
+
 import HorizontLine from 'components/HorizontLine/HorizontLine';
 import Container from 'components/Container/Container';
+import Social from 'components/Social/Social';
 
 import LogoIcon from 'images/icons/LogoIcon';
-import Contacts from 'components/Contacts/Contacts';
 import UpIcon from 'images/icons/UpIcon';
 
 import { ReactComponent as FbIcon } from 'images/svg/fb.svg';
 import { ReactComponent as InstIcon } from 'images/svg/inst.svg';
 
-import useWindowWidth from 'hooks/useWindowWidth';
-
 import style from './Footer.module.scss';
 
 const Footer = () => {
   const width = useWindowWidth();
-
   return (
     <Container>
       <div className={style.footer}>
@@ -29,7 +28,8 @@ const Footer = () => {
             <UpIcon />
           </button>
         </div>
-        <ul className={style.socialList}>
+        <Social />
+        {/* <ul className={style.socialList}>
           <li>
             <a href="https://facebook.com/" className={style.link}>
               <FbIcon className={`${style.social} ${style.linkFB}`} />
@@ -40,10 +40,16 @@ const Footer = () => {
               <InstIcon className={style.social} />
             </a>
           </li>
-        </ul>
-
-        <Contacts className={style} />
-        {width < 768 && <p className={style.сopy}>ecosolution © 2023</p>}
+        </ul> */}
+        <div className={style.contactWrapper}>
+          <p className={style.contact}>
+            <span className={style.address}>
+              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+            </span>
+            <span className={style.email}>office@ecosolution.com</span>
+            <span className={style.сopy}>ecosolution © 2023</span>
+          </p>
+        </div>
       </div>
     </Container>
   );

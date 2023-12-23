@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Contacts from 'components/Contacts/Contacts';
+import useWindowWidth from 'hooks/useWindowWidth';
 import HorizontLine from 'components/HorizontLine/HorizontLine';
 import RightIcon from 'images/icons/RightIcon';
 import Container from 'components/Container/Container';
@@ -23,6 +23,8 @@ import mainDeskWebp2x from 'images/jpg/mainImg/wind-turbine-clean-energy-desktop
 import style from './Main.module.scss';
 
 const Main = () => {
+  const width = useWindowWidth();
+
   return (
     <Container>
       <section className={style.mainSection}>
@@ -41,7 +43,17 @@ const Main = () => {
           </div>
         </div>
         <HorizontLine />
-        <Contacts />
+        <div className={style.mainContactWrapper}>
+          <p className={style.mainContact}>
+            <span className={style.mainAddress}>
+              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+            </span>
+            <span className={style.mainEmail}>office@ecosolution.com</span>
+            {width > 768 && (
+              <span className={style.mainCopy}>ecosolution © 2023</span>
+            )}
+          </p>
+        </div>
         <picture>
           <source
             srcSet={`${mainDeskWebp} 1x, ${mainDeskWebp2x} 2x`}

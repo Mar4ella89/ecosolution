@@ -5,6 +5,7 @@
 .logowrapper {
     display: flex;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 
@@ -42,46 +43,88 @@
     }
 }
 
-.socialList {
+// .socialList {
+//     margin-top: 24px;
+//     display: flex;
+//     gap: 8px;
+//     justify-content: center;
+
+//     @media screen and (min-width: 768px) {}
+
+//     @media screen and (min-width: 1280px) {}
+// }
+
+// .link {
+
+//     & .social path,
+//     & .social path {
+//         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     & .linkFB path:first-child,
+//     & .linkFB path:first-child {
+//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     &:hover .social path,
+//     &:focus .social path {
+//         stroke: #97d28b;
+//     }
+
+//     &:hover .linkFB path:first-child,
+//     &:focus .linkFB path:first-child {
+//         fill: #97d28b;
+//         stroke: none;
+//     }
+// }
+
+.contactWrapper {
     margin-top: 24px;
-    display: flex;
-    gap: 8px;
-    justify-content: center;
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        margin-top: 16px;
+    }
 
-    @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+    }
 }
 
-.link {
+.contact {
+    text-align: center;
 
-    & .social path,
-    & .social path {
-        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.address {
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-right: 77px;
     }
 
-    & .linkFB path:first-child,
-    & .linkFB path:first-child {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1280px) {
+        margin-right: 492px;
     }
+}
 
-    &:hover .social path,
-    &:focus .social path {
-        stroke: #97d28b;
-    }
+.email {
+    margin-top: 16px;
+    display: block;
 
-    &:hover .linkFB path:first-child,
-    &:focus .linkFB path:first-child {
-        fill: #97d28b;
-        stroke: none;
+    @media screen and (min-width: 768px) {
+        margin-top: 0px
     }
 }
 
 .сopy {
+    display: block;
     margin-top: 16px;
     text-align: center;
-}
 
-div>p>span {
-    margin-top: 16px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0px;
+        margin-left: auto;
+    }
 }
