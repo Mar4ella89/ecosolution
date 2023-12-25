@@ -1,13 +1,11 @@
 import React from 'react';
 
 import Container from 'components/Container/Container';
+import Social from 'components/Social/Social';
 
 import CallIcon from 'images/icons/CallIcon';
 import MailIcon from 'images/icons/MailIcon';
 import MapIcon from 'images/icons/MapIcon';
-import FacebookIcon from 'images/icons/FacebookIcon';
-import InstaIcon from 'images/icons/InstaIcon';
-
 import Form from './Form/Form';
 
 import style from './ContactUs.module.scss';
@@ -58,17 +56,7 @@ const ContactsUs = () => {
             </li>
             <li>
               <p className={style.subTitle}>Social Networks:</p>
-              <div className={style.socialWrapper}>
-                <a className={style.description} href="https://facebook.com/">
-                  <FacebookIcon />
-                </a>
-                <a
-                  className={style.description}
-                  href="https://www.instagram.com/"
-                >
-                  <InstaIcon className={style.iconSocial} />
-                </a>
-              </div>
+              <Social />
             </li>
           </ul>
           <Form onSubmit={onSubmit} />

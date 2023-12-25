@@ -43,40 +43,9 @@
     }
 }
 
-// .socialList {
-//     margin-top: 24px;
-//     display: flex;
-//     gap: 8px;
-//     justify-content: center;
-
-//     @media screen and (min-width: 768px) {}
-
-//     @media screen and (min-width: 1280px) {}
-// }
-
-// .link {
-
-//     & .social path,
-//     & .social path {
-//         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-
-//     & .linkFB path:first-child,
-//     & .linkFB path:first-child {
-//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-
-//     &:hover .social path,
-//     &:focus .social path {
-//         stroke: #97d28b;
-//     }
-
-//     &:hover .linkFB path:first-child,
-//     &:focus .linkFB path:first-child {
-//         fill: #97d28b;
-//         stroke: none;
-//     }
-// }
+.socialList {
+    justify-content: center;
+}
 
 .contactWrapper {
     margin-top: 24px;

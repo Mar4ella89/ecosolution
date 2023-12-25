@@ -5,9 +5,12 @@ import { ReactComponent as InstIcon } from 'images/svg/inst.svg';
 
 import style from './Social.module.scss';
 
-const Social = () => {
+const Social = ({ customStyles }) => {
+  const defaultStyles = style.socialList;
+
+  const combinedStyles = `${defaultStyles} ${customStyles || ''}`;
   return (
-    <ul className={style.socialList}>
+    <ul className={combinedStyles}>
       <li>
         <a href="https://facebook.com/" className={style.link}>
           <FbIcon className={`${style.social} ${style.linkFB}`} />
