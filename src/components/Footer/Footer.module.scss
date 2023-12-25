@@ -6,12 +6,26 @@
     display: flex;
     margin-top: 24px;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+    }
+}
+
+.link {
+    @media screen and (min-width: 768px) {
+        margin-right: 97px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 512px;
+    }
 }
 
 
 .logoIcon {
     & path:nth-child(3) {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill 3000ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:hover path:nth-child(3),
@@ -54,7 +68,7 @@
         margin-top: 16px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 12px;
     }
 }
