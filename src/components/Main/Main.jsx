@@ -27,7 +27,7 @@ const Main = () => {
 
   return (
     <Container>
-      <section className={style.mainSection}>
+      <section className={style.mainSection} id="main">
         <div className={style.mainWrapper}>
           <h1 className={style.mainTitle}>RENEWABLE ENERGY For any task</h1>
           <div className={style.mainInfoWrapper}>
