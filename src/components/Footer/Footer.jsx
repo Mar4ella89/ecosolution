@@ -1,6 +1,5 @@
 import React from 'react';
-// import { animateScroll as scroll } from 'react-scroll';
-import { ScrollLink } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import useWindowWidth from 'hooks/useWindowWidth';
 
@@ -14,12 +13,6 @@ import UpIcon from 'images/icons/UpIcon';
 import style from './Footer.module.scss';
 
 const Footer = () => {
-  // const handleScrollTop = () => {
-  //   scroll.scrollToTop({
-  //     duration: 3000,
-  //     smooth: 'easeInOutQuart',
-  //   });
-  // };
   const width = useWindowWidth();
   return (
     <Container>
@@ -30,24 +23,15 @@ const Footer = () => {
             <LogoIcon color={'#173D33'} className={style.logoIcon} />
           </a>
           {width > 768 && <Social customStyles={style.socialList} />}
-
-          <button
-            type="button"
+          <Link
+            to="main"
+            smooth={true}
+            duration={2000}
+            offset={-130}
             className={style.upBtn}
-            // onClick={handleScrollTop}
-          >
-            <ScrollLink to="top" smooth>
-              <UpIcon />
-            </ScrollLink>
-          </button>
-
-          {/* <button
-            type="button"
-            className={style.upBtn}
-            onClick={handleScrollTop}
           >
             <UpIcon />
-          </button> */}
+          </Link>
         </div>
         {width < 768 && <Social customStyles={style.socialList} />}
         <div className={style.contactWrapper}>
