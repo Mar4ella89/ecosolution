@@ -17,7 +17,7 @@ const onSubmit = formData => {
 const ContactsUs = () => {
   return (
     <Container>
-      <section className={style.section}>
+      <section className={style.section} id="contactUs">
         <h2 className={style.title}>Contact us</h2>
         <div className={style.contactWrapper}>
           <ul className={style.list}>

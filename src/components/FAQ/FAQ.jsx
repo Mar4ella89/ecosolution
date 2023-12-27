@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 import HorizontLine from 'components/HorizontLine/HorizontLine';
 import Container from 'components/Container/Container';
@@ -61,10 +62,16 @@ const FAQ = () => {
           <p className={style.faqFooterText}>
             Didn't find the answer to your question?{' '}
           </p>
-          <button className={style.contactButton} type="button">
+          <Link
+            to="contactUs"
+            smooth={true}
+            duration={2000}
+            offset={-130}
+            className={style.contactButton}
+          >
             <span className={style.contactButtonText}>Contact Us</span>
             <DownIcon color={'#173D33'} />
-          </button>
+          </Link>
         </div>
       </section>
     </Container>
