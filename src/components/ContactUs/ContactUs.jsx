@@ -47,6 +47,8 @@ const ContactsUs = () => {
               <a
                 className={style.description}
                 href="https://maps.app.goo.gl/kbe2x9QohcFLjuBX7"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
               >
                 <MapIcon className={style.icon} />
                 <p className={style.value}>

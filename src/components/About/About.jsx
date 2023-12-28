@@ -178,6 +178,7 @@ const About = () => {
                     alt="Generating power generation using energy sun"
                     width="342"
                     height="197"
+                    loading="lazy"
                     className={style.aboutImg}
                   />
                 </picture>

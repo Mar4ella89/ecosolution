@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import useWindowWidth from 'hooks/useWindowWidth';
 import HorizontLine from 'components/HorizontLine/HorizontLine';
@@ -36,10 +37,16 @@ const Main = () => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </p>
-            <button className={style.mainButton}>
+            <Link
+              to="cases"
+              smooth={true}
+              duration={2000}
+              offset={-120}
+              className={style.mainButton}
+            >
               <span className={style.mainButtonText}>Learn more</span>
               <RightIcon fill={'#97D28B'} />
-            </button>
+            </Link>
           </div>
         </div>
         <HorizontLine />

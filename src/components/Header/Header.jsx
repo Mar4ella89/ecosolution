@@ -63,34 +63,6 @@ const Header = () => {
           <span className={style.contactButtonText}>Get in touch</span>
           <DownIcon color={'#173D33'} />
         </Link>
-        {/* <Link
-          to="contactUs"
-          smooth={true}
-          duration={2000}
-          offset={-130}
-          // className={`${style.contactButton} ${
-          //   width < 767 ? style.visuallyHidden : ''
-          // }`}
-        >
-          <button
-            className={`${style.contactButton} ${
-              width < 767 ? style.visuallyHidden : ''
-            }`}
-            type="button"
-          >
-            <span className={style.contactButtonText}>Get in touch</span>
-            <DownIcon color={'#173D33'} />
-          </button>
-        </Link> */}
-        {/* <button
-          className={`${style.contactButton} ${
-            width < 767 ? style.visuallyHidden : ''
-          }`}
-          type="button"
-        >
-          <span className={style.contactButtonText}>Get in touch</span>
-          <DownIcon color={'#173D33'} />
-        </button> */}
       </header>
     </div>
   );

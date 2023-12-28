@@ -12,12 +12,22 @@ const Social = ({ customStyles }) => {
   return (
     <ul className={combinedStyles}>
       <li>
-        <a href="https://facebook.com/" className={style.link}>
+        <a
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className={style.link}
+        >
           <FbIcon className={`${style.social} ${style.linkFB}`} />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/" className={style.link}>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className={style.link}
+        >
           <InstIcon className={style.social} />
         </a>
       </li>

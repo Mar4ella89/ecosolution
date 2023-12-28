@@ -82,7 +82,7 @@ const Cases = () => {
 
   return (
     <Container>
-      <section className={style.caseSection}>
+      <section className={style.caseSection} id="cases">
         <div className={style.caseHeader}>
           <h2 className={style.caseTitle}>Successful cases of our company</h2>
 
@@ -126,7 +126,7 @@ const Cases = () => {
                     src={require(`../../${srcImg}`)}
                     alt={description}
                     width="320"
-                    // height="168"
+                    loading="lazy"
                   />
                   <div className={style.infoWrapper}>
                     <div className={style.subTitleWrapper}>
