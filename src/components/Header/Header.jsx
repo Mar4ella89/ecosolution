@@ -4,12 +4,18 @@ import { Link } from 'react-scroll';
 import LogoIcon from 'images/icons/LogoIcon';
 import BurgerIcon from 'images/icons/BurgerIcon';
 import DownIcon from 'images/icons/DownIcon';
+import Modal from 'components/Modal/Modal';
 
 import style from './Header.module.scss';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [width, setWidth] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,9 +54,26 @@ const Header = () => {
         <a href="index.html" className={style.logoIcon}>
           <LogoIcon color={'#173D33'} />
         </a>
-        <button className={style.menuButton} type="button">
+        <button
+          className={style.menuButton}
+          type="button"
+          onClick={handleClick}
+        >
           <BurgerIcon />
         </button>
+        {isOpen && (
+          <ul className="menu">
+            <li>
+              <a href="#">Ссылка 1</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 2</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 3</a>
+            </li>
+          </ul>
+        )}
         <Link
           to="contactUs"
           smooth={true}
