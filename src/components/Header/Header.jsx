@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 
 import LogoIcon from 'images/icons/LogoIcon';
 import BurgerIcon from 'images/icons/BurgerIcon';
@@ -50,8 +51,38 @@ const Header = () => {
         <button className={style.menuButton} type="button">
           <BurgerIcon />
         </button>
-
-        <button
+        <Link
+          to="contactUs"
+          smooth={true}
+          duration={2000}
+          offset={-120}
+          className={`${style.contactButton} ${
+            width < 767 ? style.visuallyHidden : ''
+          }`}
+        >
+          <span className={style.contactButtonText}>Get in touch</span>
+          <DownIcon color={'#173D33'} />
+        </Link>
+        {/* <Link
+          to="contactUs"
+          smooth={true}
+          duration={2000}
+          offset={-130}
+          // className={`${style.contactButton} ${
+          //   width < 767 ? style.visuallyHidden : ''
+          // }`}
+        >
+          <button
+            className={`${style.contactButton} ${
+              width < 767 ? style.visuallyHidden : ''
+            }`}
+            type="button"
+          >
+            <span className={style.contactButtonText}>Get in touch</span>
+            <DownIcon color={'#173D33'} />
+          </button>
+        </Link> */}
+        {/* <button
           className={`${style.contactButton} ${
             width < 767 ? style.visuallyHidden : ''
           }`}
@@ -59,7 +90,7 @@ const Header = () => {
         >
           <span className={style.contactButtonText}>Get in touch</span>
           <DownIcon color={'#173D33'} />
-        </button>
+        </button> */}
       </header>
     </div>
   );
