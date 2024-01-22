@@ -24,15 +24,15 @@ const Form = ({ onSubmit }) => {
     event.preventDefault();
 
     if (formData.fullName === '') {
-      alert('Full name field is required');
+      alert('Full name field is required!');
       return;
     }
     if (formData.email === '') {
-      alert('E-mail field is required');
+      alert('E-mail field is required!');
       return;
     }
     if (formData.phone === '') {
-      alert('Phone field is required');
+      alert('Phone field is required!');
       return;
     }
 
