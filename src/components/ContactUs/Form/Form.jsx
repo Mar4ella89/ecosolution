@@ -24,7 +24,7 @@ const Form = ({ onSubmit }) => {
     event.preventDefault();
 
     if (formData.fullName === '') {
-      alert('Full name field is required! Please try again');
+      alert('Full name field is required! Please try again.');
       return;
     }
     if (formData.email === '') {
