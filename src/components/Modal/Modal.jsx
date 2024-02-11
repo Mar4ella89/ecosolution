@@ -28,12 +28,12 @@ const Modal = ({ closeModal, children }) => {
     <div className={style.backdrop} onClick={handleDown}>
       <div className={style.modal}>
         <button onClick={() => closeModal()} type="button">
-          <CloseIcon
+          {/* <CloseIcon
             color={'#54ADFF'}
             className={style.modal__close}
             width="24"
             height="24"
-          />
+          /> */}
         </button>
         <div className={style.modal__section}>{children}</div>
       </div>
