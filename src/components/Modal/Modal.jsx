@@ -29,14 +29,14 @@ const Modal = ({ closeModal, children }) => {
   return createPortal(
     <div className={style.backdrop} onClick={handleDown}>
       <div className={style.modal}>
-        <button onClick={() => closeModal()} type="button">
+        <button onClick={() => closeModal()} type="button" className={style.closeBtn}>
           <CloseIcon
             color={'#54ADFF'}
-            className={style.closeBtn}
-            width="8"
-            height="8"
+            className={style.icon}
+            width="9"
+            height="9"
           />
-          <span>close</span>
+          <span className={style.text}>close</span>
         </button>
         <div className={style.modal__section}>{children}</div>
       </div>
