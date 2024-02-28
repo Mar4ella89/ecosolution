@@ -1,7 +1,9 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
-// import { CloseIcon } from 'images/icons/userPageIcons';
+
+// import { CloseIcon } from 'images/svg/CloseIcon';
+import { ReactComponent as CloseIcon } from 'images/svg/CloseIcon.svg';
 
 import style from './Modal.module.scss';
 
