@@ -32,7 +32,7 @@ const Modal = ({ closeModal, children }) => {
         <button onClick={() => closeModal()} type="button">
           <CloseIcon
             color={'#54ADFF'}
-            className={style.modal__close}
+            className={style.closeBtn}
             width="24"
             height="24"
           />
