@@ -62,7 +62,7 @@ const Header = () => {
           <BurgerIcon />
         </button>
         {isOpen && (
-          <Modal/>
+          <Modal closeModal={handleClick}/>
         )}
         
         <Link

@@ -10,6 +10,7 @@ import style from './Modal.module.scss';
 const modalRoot = document.querySelector('#modal-root');
 
 const Modal = ({ closeModal, children }) => {
+  
   useEffect(() => {
     const handleDownInEscape = e => {
       if (e.code === 'Escape') {
