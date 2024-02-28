@@ -119,6 +119,9 @@
 }
 
 .contactButton {
+    display: flex;
+    justify-content: center;
+    
     width: 130px;
     height: 40px;
     border-radius: 50px;
