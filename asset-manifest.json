@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.2638e1f0.css",
-    "main.js": "/ecosolution/static/js/main.fa9ab083.js",
+    "main.css": "/ecosolution/static/css/main.f1d56344.css",
+    "main.js": "/ecosolution/static/js/main.99c8eb91.js",
     "static/media/wind-turbine-clean-energy-desktop-2x.jpg": "/ecosolution/static/media/wind-turbine-clean-energy-desktop-2x.be5b3f56c4a0b6ea2b2c.jpg",
     "static/media/wind-turbine-clean-energy-desktop-2x.webp": "/ecosolution/static/media/wind-turbine-clean-energy-desktop-2x.81c0e0f87b894b3c3ced.webp",
     "static/media/wind-turbine-clean-energy-tab-2x.jpg": "/ecosolution/static/media/wind-turbine-clean-energy-tab-2x.7fa33dac845e769fcdc1.jpg",
@@ -43,11 +43,12 @@
     "static/media/inst.svg": "/ecosolution/static/media/inst.6e44fb60b2bc0188a75401317260801f.svg",
     "static/media/fb.svg": "/ecosolution/static/media/fb.7d3482cf4dc99aae8274300de788adcd.svg",
     "static/media/CloseIcon.svg": "/ecosolution/static/media/CloseIcon.55f6f7468a5b50567fa7e7b57866bd5e.svg",
-    "main.2638e1f0.css.map": "/ecosolution/static/css/main.2638e1f0.css.map",
-    "main.fa9ab083.js.map": "/ecosolution/static/js/main.fa9ab083.js.map"
+    "static/media/close-light.svg": "/ecosolution/static/media/close-light.b3a19078b0ff7df561ce.svg",
+    "main.f1d56344.css.map": "/ecosolution/static/css/main.f1d56344.css.map",
+    "main.99c8eb91.js.map": "/ecosolution/static/js/main.99c8eb91.js.map"
   },
   "entrypoints": [
-    "static/css/main.2638e1f0.css",
-    "static/js/main.fa9ab083.js"
+    "static/css/main.f1d56344.css",
+    "static/js/main.99c8eb91.js"
   ]
 }
