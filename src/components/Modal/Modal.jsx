@@ -33,9 +33,10 @@ const Modal = ({ closeModal, children }) => {
           <CloseIcon
             color={'#54ADFF'}
             className={style.closeBtn}
-            width="24"
-            height="24"
+            width="8"
+            height="8"
           />
+          <span>close</span>
         </button>
         <div className={style.modal__section}>{children}</div>
       </div>
