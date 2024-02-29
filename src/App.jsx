@@ -1,12 +1,12 @@
-import Header from 'components/Header/Header';
+import Header from 'modules/Header/Header';
 
-import Main from 'components/Main/Main';
-import About from 'components/About/About';
-import Electricity from 'components/Electricity/Electricity';
-import Cases from 'components/Cases/Cases';
-import FAQ from 'components/FAQ/FAQ';
-import ContactsUs from 'components/ContactUs/ContactUs';
-import Footer from 'components/Footer/Footer';
+import Main from 'modules/Main/Main';
+import About from 'modules/About/About';
+import Electricity from 'modules/Electricity/Electricity';
+import Cases from 'modules/Cases/Cases';
+import FAQ from 'modules/FAQ/FAQ';
+import ContactsUs from 'modules/ContactUs/ContactUs';
+import Footer from 'modules/Footer/Footer';
 
 function App() {
   return (
