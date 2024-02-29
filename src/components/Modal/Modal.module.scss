@@ -8,8 +8,8 @@
     justify-content: center;
 
     background-color: rgba(23, 61, 51, 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 
     z-index: 1300;
 }
@@ -33,7 +33,7 @@
     margin: 36px 20px;
 
     background-color: #173d33;
-    opacity: 0.75;
+    opacity: 0.85;
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
 }
